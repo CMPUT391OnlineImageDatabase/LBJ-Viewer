@@ -8,7 +8,6 @@
 <html>
 <head>
 <title> Photo List </title>
-</head>
 <body bgcolor="#FFFFFF" text="#cccccc" >
 <center>
 <h3>The List of Images </h3>
@@ -28,7 +27,7 @@ try {
 	Class drvClass = Class.forName(driverName); 
 	DriverManager.registerDriver((Driver) drvClass.newInstance());
 	//establish the connection 
-    conn = DriverManager.getConnection(dbstring,"lingbo","TlboSci1994");
+    conn = DriverManager.getConnection(dbstring,"****","****");
 	conn.setAutoCommit(false);
 	
     String p_id = "";
