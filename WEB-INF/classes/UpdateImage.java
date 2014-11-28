@@ -20,8 +20,8 @@ public class UpdateImage extends HttpServlet {
     public void doPost(HttpServletRequest request,HttpServletResponse response)
 	throws ServletException, IOException {
 	//  change the following parameters to connect to the oracle database
-	String username = "lingbo";
-	String password = "TlboSci1994";
+	String username = "****";
+	String password = "****";
 	String drivername = "oracle.jdbc.driver.OracleDriver";
 	String dbstring ="jdbc:oracle:thin:@gwynne.cs.ualberta.ca:1521:CRS";
 			    
