@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+.code {
+font-family: monospace;
+}
+</style>
+<head>
+<title>1. Setup</title>
+</head>
+<body>
+<h1>Installation </h1>
+<p>To install the system, you need to do the following steps:</p>
+<div id="1.1">
+<h2>1. Download the source files</h2>
+<ul>
+<li> Download the installation package and extract the files to be base website directory
+a. The path should be <span class="code">~/catalina/webapps/OnlineImageProcess</span></li>
+</ul>
+</div>
+<div id="1.2">
+<h2>2. Tomcat</h2>
+<ul>
+<li><p>Inside the terminal, execute the commands in order: </p></li>
+<li><p>a. <span class="code">starttomcat</span></p></li>
+<li><p>b. <span class="code">javac WEB-INF/classes/*.java</span></p></li>
+<li><p>c. <span class="code">cd  ~/catalina/webapps/OnlineImageProcess/SQLstatement</span></p></li>
+<li><p>d. <span class="code">sqlplus <your username>,<your password></span></p></li>
+<li><p>e. <span class="code">@setupscript.sql</span></p></li>
+<li><p>f. <span class="code">starttomcat</span></p></li>
+</ul>
+</div>
+<div id="1.3">
+<h2>3. Connect</h2>
+<ul>
+<li><p>In the web browser, enter: <span class="code">http://u***.cs.ualberta.ca:<your-port-number>/OnlineImageProcess/welcome.html </span> where "<span class="code">u***</span>" is the computer number that you are using.</p></li>
+</ul>
+</div>
+<FORM NAME='backForm' ACTION='Documentation.html' METHOD='post'>
+<INPUT TYPE='submit' NAME='Back' VALUE='Return'>
+</FORM>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+.code {
+font-family: monospace;
+}
+</style>
+<head>
+<title>6. Data Analysis Module</title>
+</head>
+<body>
+<div id="6.1">
+<h1>Data Analysis </h1>
+<h2>6.1 Generate an OLAP Report</h2>
+<p>This module will be used by the system administrator to generate and display an <span class="code">OLAP</span> report according to admin specified values. </p>
+
+<p>This page is reached when an admin clicks on the <span class="code">Analysis</span> button from the profile page </p>
+<p>If the user is not a system administrator then clicking the button will not do anything and the user will be redirected back to the profile page.</p>
+<p>The admin may then choose to display the number of images for:</p>
+<ul>
+<li> <span class="code">an owner</span>, <span class="code">a subject</span>, <span class="code">or time period</span>.</li>
+<li> A administrator may also perform a drill down or roll up according to a time hierarchy (yearly, monthly, or weekly).</li>
+</ul>
+<p> A system administrator is also able to perform a query on any combination of these as long as a value is entered and the
+  sort checkbox for that value is checked to let our program know. </p>
+<p> If no value is entered then a query for count of all images in the system will be retrieved. </p>
+<p> When admin wishes to query for a subject or a user they must also check the <span class="code">Search for x</span> box corresponding to that value. </p>
+<p>Clicking the <span class="code">Run</span> button will perform our test and an analysis report will be generated according to the values specified. </p>
+</div>
+
+<FORM NAME='backForm' ACTION='Documentation.html' METHOD='post'>
+<INPUT TYPE='submit' NAME='Back' VALUE='Return'>
+</FORM>
+</body>
+</html>
+  

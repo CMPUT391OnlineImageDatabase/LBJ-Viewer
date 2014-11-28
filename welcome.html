@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<TITLE>LBJ Viewer</TITLE>
+<style type="text/css">
+input[type=text] {
+	padding:5px;
+	border:2px;
+	solid #ccc;
+-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+input[type=text]:focus {border-color:#333;}
+input[type=submit]{padding:5px 15px; background:#ccc; border:0 none;
+	cursor:pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; }
+input[type=password] {
+	padding:5px;
+	border:2px;
+	solid #ccc;
+-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+input[type=password]:focus {border-color:#333;}
+input[type=reset]{padding:5px 15px; background:#ccc; border:0 none;
+	cursor:pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; }
+</style>
+<script language="JavaScript" type="text/javascript">
+function checkform(form){
+	if (form.USERID.value == ""){
+		alert("Please input the username");
+		form.USERID.focus();
+		return false;
+	}
+	if (form.PASSWD.value == ""){
+		alert("Please input your password");
+		form.PASSWD.focus();
+		return false;
+	}
+	return true;
+}
+</script>
+</HEAD>
+<body background="http://images6.alphacoders.com/437/437792.jpg">
+<!--This is the login page-->
+<H1><CENTER><font size="6" face="Verdana" color="#ffffff">Welcome to LBJ Viewer</font></CENTER></H1>
+<FORM NAME="LoginForm" ACTION="login.jsp" METHOD="post" onSubmit="return checkform(this);" >
+<span style="float:left;"> </span>
+<CENTER>
+<TABLE border="0" width="30%" cellpadding="5">
+<TR valign="top" align="left">
+<TD><B><I><font size="3" color="#ffffff">Username:</font></I></B></TD>
+<TD><INPUT TYPE=text NAME="USERID" VALUE=""><BR></TD>
+</TR>
+<TR valign="top" align="left">
+<TD><B><I><font size="3" color="#ffffff">Password:</font></I></B></TD>
+<TD><INPUT TYPE=password NAME="PASSWD" VALUE=""></TD>
+</TR>
+<TR valign="top" align="left">
+<TD><INPUT TYPE="submit" NAME="Submit" VALUE="Login"></TD>
+</FORM>
+<TD><INPUT TYPE="reset" NAME="Reset" VALUE="Reset"></TD>
+<TR valign="top" align="left">
+<form name="signup" action="signup.jsp" method="post">
+<span style="float:left;"> </span>
+<TD><input type="submit" Name="Signup" value="Signup"></TD>
+</form>
+</TR>
+</TABLE>
+</CENTER>
+<hr>
+
+<h2><font color="#ffffff"> Links  </font></h2>
+<li><a href='Documentation.html' target ='_blank'><b>Documentation</a>
+
+<br></br>
+<li> <a href="https://github.com/CMPUT391OnlineImageDatabase/OnlineImageProcess">GitHub</a>
+</p>
+<p>
+<HR>
+</BODY>
+</HTML>

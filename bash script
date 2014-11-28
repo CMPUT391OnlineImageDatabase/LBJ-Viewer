@@ -1,0 +1,5 @@
+CLASSPATH=$CLASSPATH\:/oracle/jdbc/lib/ojdbc6.jar:/usr/local/catalina/lib/servlet-api.jar:/cshome/lingbo/catalina/webapps/OnlineImageProcess/WEB-INF/lib/commons-fileupload-1.0.jar:/cshome/lingbo/catalina/webapps/proj1/WEB-INF/lib/commons-fileupload-1.0.jar
+export CLASSPATH=$CLASSPATH\:.\:/oracle/jdbc/lib/classes12.zip
+export CLASSPATH
+
+# Change the path and then restart your machine.
