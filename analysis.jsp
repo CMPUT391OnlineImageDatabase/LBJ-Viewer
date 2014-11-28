@@ -19,7 +19,7 @@
 	Class drvClass = Class.forName("oracle.jdbc.driver.OracleDriver");
 	DriverManager.registerDriver((Driver) drvClass.newInstance());
 	//establish the connection
-	con = DriverManager.getConnection("jdbc:oracle:thin:@gwynne.cs.ualberta.ca:1521:CRS","btrinh","trinh187");
+	con = DriverManager.getConnection("jdbc:oracle:thin:@gwynne.cs.ualberta.ca:1521:CRS","****","****");
 	con.setAutoCommit(false);
 %>
 	<%!
