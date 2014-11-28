@@ -135,7 +135,7 @@ function checkform(form){
 	
 
         	//establish the connection 
-	        conn = DriverManager.getConnection(dbstring,"lingbo","TlboSci1994");
+	        conn = DriverManager.getConnection(dbstring,"****","****");
         	conn.setAutoCommit(false);
 	        
 		//check wheter the username is valid
