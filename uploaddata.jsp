@@ -25,7 +25,7 @@ $( "#datepicker" ).datepicker();
 	DriverManager.registerDriver((Driver) drvClass.newInstance());
 
 	//establish the connection 
-	conn = DriverManager.getConnection("jdbc:oracle:thin:@gwynne.cs.ualberta.ca:1521:CRS","lingbo","TlboSci1994");
+	conn = DriverManager.getConnection("jdbc:oracle:thin:@gwynne.cs.ualberta.ca:1521:CRS","***","****");
 	conn.setAutoCommit(false);
 	
 	Statement stmt = conn.createStatement();
@@ -73,7 +73,7 @@ $( "#datepicker" ).datepicker();
 	DriverManager.registerDriver((Driver) drvClass.newInstance());
 
 	//establish the connection 
-	conn = DriverManager.getConnection("jdbc:oracle:thin:@gwynne.cs.ualberta.ca:1521:CRS","lingbo","TlboSci1994");
+	conn = DriverManager.getConnection("jdbc:oracle:thin:@gwynne.cs.ualberta.ca:1521:CRS","****","*****");
 	conn.setAutoCommit(false);
 
 	String userName = (String)session.getAttribute("USERNAME");
